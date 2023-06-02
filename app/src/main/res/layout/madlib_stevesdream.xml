@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stevesdream_bg1"
+    tools:context=".MadLibStevesDreamActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="The Dream Maker"
+            android:textColor="@color/stevesdream_title1"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Entering a creepy forest at night"
+            android:textColor="@color/stevesdream_txt1"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:textColor="@color/stevesdream_txt1"
+            android:text="Fill in the boxes below to generate a mad lib." />
+
+        <EditText
+            android:id="@+id/et_BaseballTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Baseball team"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_TrueOrFalse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="True or False"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_Noun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Noun"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_Adverb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Adverb"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_Adjective"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Adjective"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_Color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Color"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_Animal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Animal"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Any number"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_Toy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Any toy"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_Car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Any car"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_Resturant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Resturant"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_AmountOfMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="A amount of money"
+            android:textColorHint="@color/stevesdream_hint_txt"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btn_generate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/stevesdream_btn_txt"
+            android:backgroundTint="@color/stevesdream_btn_bg"
+            android:text="Generate" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
