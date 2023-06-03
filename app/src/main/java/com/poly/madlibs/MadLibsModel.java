@@ -1,19 +1,19 @@
 package com.poly.madlibs;
 
 import android.app.Activity;
-import android.widget.ImageView;
 
 import java.io.Serializable;
 
-public class MadLib implements Serializable {
+public class MadLibsModel implements Serializable {
 
     private Activity activity;
-    private String name;
+    private String name, author;
     private int imageId;
 
-    public MadLib(Activity activity, String name, int imageId) {
+    public MadLibsModel(String name, String author, Activity activity,  int imageId) {
         this.activity = activity;
         this.name = name;
+        this.author = author;
         this.imageId = imageId;
     }
 
@@ -21,8 +21,12 @@ public class MadLib implements Serializable {
         return activity;
     }
 
-    public String getName() {
+    public String getTitle() {
         return name;
+    }
+
+    public String getAuthor() {
+        return author;
     }
 
     public int getImageId() {

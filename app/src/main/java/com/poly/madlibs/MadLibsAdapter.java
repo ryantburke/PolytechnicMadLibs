@@ -1,6 +1,5 @@
 package com.poly.madlibs;
 
-import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,12 +13,12 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class MadLibsAdapter extends ArrayAdapter<MadLib> {
+public class MadLibsAdapter extends ArrayAdapter<MadLibsModel> {
     
     private Context context;
     private int resource;
     
-    public MadLibsAdapter(@NonNull Context context, int resource, @NonNull ArrayList<MadLib> objects) {
+    public MadLibsAdapter(@NonNull Context context, int resource, @NonNull ArrayList<MadLibsModel> objects) {
         super(context, resource, objects);
         this.context = context;
         this.resource = resource;
@@ -38,7 +37,7 @@ public class MadLibsAdapter extends ArrayAdapter<MadLib> {
 
         imageView.setImageResource(getItem(position).getImageId());
 
-        txtName.setText(getItem(position).getName());
+        txtName.setText(getItem(position).getTitle());
 
 
         return convertView;
