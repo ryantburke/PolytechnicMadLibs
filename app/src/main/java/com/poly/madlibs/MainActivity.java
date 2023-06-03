@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -23,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        replaceFragment(new MadlibsFragment());
+        replaceFragment(new ChooseMadlibsFragment());
 
         nav = findViewById(R.id.nav);
 
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
                 int itemId = item.getItemId();
                 if (itemId == R.id.madlibs) {
-                    replaceFragment(new MadlibsFragment());
+                    replaceFragment(new ChooseMadlibsFragment());
                 } else if (itemId == R.id.bookmarks) {
                     replaceFragment(new SavedFragment());
                 }

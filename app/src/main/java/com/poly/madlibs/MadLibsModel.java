@@ -10,6 +10,12 @@ public class MadLibsModel implements Serializable {
     private String name, author;
     private int imageId;
 
+    public MadLibsModel(String name, String author, int imageId) {
+        this.name = name;
+        this.author = author;
+        this.imageId = imageId;
+    }
+
     public MadLibsModel(String name, String author, Activity activity,  int imageId) {
         this.activity = activity;
         this.name = name;

@@ -1,6 +1,7 @@
 package com.poly.madlibs;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 public class MadLibs_RecyclerViewAdapter extends RecyclerView.Adapter<MadLibs_RecyclerViewAdapter.MyViewHolder> {
 
     Context context;
+    private OnItemClickListener listener;
     ArrayList<MadLibsModel> madLibsModels;
 
     public MadLibs_RecyclerViewAdapter(Context context, ArrayList<MadLibsModel> madLibsModels) {
@@ -33,16 +35,23 @@ public class MadLibs_RecyclerViewAdapter extends RecyclerView.Adapter<MadLibs_Re
 
     @Override
     public void onBindViewHolder(@NonNull MadLibs_RecyclerViewAdapter.MyViewHolder holder, int position) {
-        holder.tvTitle.setText((madLibsModels.get(position).getTitle()));
-        holder.tvAuthor.setText(madLibsModels.get(position).getAuthor());
-        holder.imageView.setImageResource(madLibsModels.get(position).getImageId());
-
+        holder.bind(madLibsModels.get(position),listener);
     }
 
     @Override
     public int getItemCount() {
         return madLibsModels.size();
     }
+
+    public void setOnClickListener(OnItemClickListener listener){
+        this.listener = listener;
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(MadLibsModel model);
+    }
+
+
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
@@ -52,10 +61,25 @@ public class MadLibs_RecyclerViewAdapter extends RecyclerView.Adapter<MadLibs_Re
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-
             imageView = itemView.findViewById(R.id.iv_image);
             tvTitle = itemView.findViewById((R.id.tv_title));
             tvAuthor = itemView.findViewById(R.id.tv_author);
         }
+
+        public void bind(final MadLibsModel model, final OnItemClickListener listener) {
+            tvTitle.setText((model.getTitle()));
+            tvAuthor.setText(model.getAuthor());
+            imageView.setImageResource(model.getImageId());
+            Log.d("bind",model.getTitle());
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d("click",model.getTitle());
+                    listener.onItemClick(model);
+                }
+            });
+        }
+
     }
 }
