@@ -12,5 +12,13 @@
     <color name="stevesdream_hint_txt">#0B040B</color>
     <color name="stevesdream_btn_txt">#314AA3</color>
     <color name="stevesdream_btn_bg">#04040B</color>
+    <color name="tobysadventure_txt_title">#000000</color>
+    <color name="tobysadventure_txt_title2">#FFFFFF</color>
+    <color name="tobysadventure_txt_desc">#FFFFFF</color>
+    <color name="tobysadventure_txt_hint">#FFC107</color>
+    <color name="tobysadventure_txt_story">#FFC107</color>
+    <color name="tobysadventure_bg">#1C511E</color>
+    <color name="tobysadventure_btn_txt">#FFFFFF</color>
+    <color name="tobysadventure_btn_bg">#F1BEBE</color>
 
 </resources>
