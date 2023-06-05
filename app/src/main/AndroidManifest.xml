@@ -27,6 +27,12 @@
         <activity
             android:name=".MadLibStevesDreamDisplayActivity"
             android:exported="false" />
+        <activity android:name="com.poly.madlibs.MadLibJomandTerryActivity" />
+        <activity android:name="com.poly.madlibs.MadLibJomandTerryDisplayActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
     </application>
 
