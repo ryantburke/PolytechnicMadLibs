@@ -3,11 +3,17 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bottom_nav">#5454A8</color>
+    <color name="about_bg">#FFEB3B</color>
+    <color name="about_txt_title">#4CAF50</color>
+    <color name="about_txt">#4CAF50</color>
     <color name="stevesdream_bg1">#5454A8</color>
     <color name="stevesdream_title1">#020205</color>
     <color name="stevesdream_txt1">#04050B</color>
     <color name="stevesdream_hint_txt">#0B040B</color>
     <color name="stevesdream_btn_txt">#314AA3</color>
     <color name="stevesdream_btn_bg">#04040B</color>
+    <color name="fooding_bg">#9CF3ADFF</color>
+    <color name="fooding_txt_title">#0C7335</color>
+    <color name="fooding_txt_hints">#BE2FA695</color>
 
 </resources>
