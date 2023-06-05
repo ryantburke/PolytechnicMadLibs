@@ -83,6 +83,7 @@ public class ChooseMadlibsFragment extends Fragment {
         //construct list of madlibs
         madLibsList = new ArrayList<MadLibsModel>();
         madLibsList.add(new MadLibsModel("Steve's Dream","Steve M", new MadLibStevesDreamActivity(), R.drawable.stevesdream_image));
+        madLibsList.add(new MadLibsModel("Night in the Forest","Devian Zendejas", new MadLibsNightInTheForestActivity(), R.drawable.nightintheforest_image));
 
         //set adapter
         MadLibs_RecyclerViewAdapter adapter = new MadLibs_RecyclerViewAdapter(context, madLibsList);

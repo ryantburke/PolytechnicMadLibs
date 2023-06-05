@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/nightintheforest_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MadLibsNightInTheForestActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="Night in the Forest"
+        android:textSize="25sp"
+        android:textColor="@color/nightintheforest_txt_title"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="643dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="2dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-17dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="415dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/et_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Late Time"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:textColor="@color/nightintheforest_txt"
+            android:textColorHint="@color/nightintheforest_txt_hint" />
+
+        <EditText
+            android:id="@+id/et_noun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Noun"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/nightintheforest_txt"
+            android:textColorHint="@color/nightintheforest_txt_hint" />
+
+        <EditText
+            android:id="@+id/et_adjective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Adjective"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/nightintheforest_txt"
+            android:textColorHint="@color/nightintheforest_txt_hint" />
+
+        <EditText
+            android:id="@+id/et_Color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Color"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/nightintheforest_txt"
+            android:textColorHint="@color/nightintheforest_txt_hint" />
+
+        <EditText
+            android:id="@+id/et_fruit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Fruit"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/nightintheforest_txt"
+            android:textColorHint="@color/nightintheforest_txt_hint" />
+
+        <EditText
+            android:id="@+id/et_musicArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Music Artist"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/nightintheforest_txt"
+            android:textColorHint="@color/nightintheforest_txt_hint" />
+
+        <EditText
+            android:id="@+id/et_verb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Verb"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/nightintheforest_txt"
+            android:textColorHint="@color/nightintheforest_txt_hint" />
+
+        <EditText
+            android:id="@+id/et_celebrity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Celebrity"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/nightintheforest_txt"
+            android:textColorHint="@color/nightintheforest_txt_hint" />
+
+        <EditText
+            android:id="@+id/et_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Song"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/nightintheforest_txt"
+            android:textColorHint="@color/nightintheforest_txt_hint" />
+
+        <EditText
+            android:id="@+id/et_tvShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tv Show"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/nightintheforest_txt"
+            android:textColorHint="@color/nightintheforest_txt_hint" />
+
+        <Button
+            android:id="@+id/btn_generatestory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/nightintheforest_bg_btn"
+            android:text="Generate" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
