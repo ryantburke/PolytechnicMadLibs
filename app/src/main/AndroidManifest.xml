@@ -41,6 +41,8 @@
         <activity android:name="com.poly.madlibs.MadLibTobysAdventureDisplayActivity" />
         <activity android:name="com.poly.madlibs.MadLibDragonSlayerActivity" />
         <activity android:name="com.poly.madlibs.MadLibDragonSlayerDisplayActivity" />
+        <activity android:name="com.poly.madlibs.MadLibsFoodingActivity" />
+        <activity android:name="com.poly.madlibs.MadLibsFoodingDisplayActivity" />
 
     </application>
 

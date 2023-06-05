@@ -28,5 +28,8 @@
     <color name="tobysadventure_bg">#1C511E</color>
     <color name="tobysadventure_btn_txt">#FFFFFF</color>
     <color name="tobysadventure_btn_bg">#F1BEBE</color>
+    <color name="fooding_bg">#9CF3ADFF</color>
+    <color name="fooding_txt_title">#0C7335</color>
+    <color name="fooding_txt_hints">#BE2FA695</color>
 
 </resources>
