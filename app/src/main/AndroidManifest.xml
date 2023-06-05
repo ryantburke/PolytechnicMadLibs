@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PolytechnicMadLibs"
         tools:targetApi="31">
         <activity
+            android:name=".MadLibsWoolooMedievalDisplayActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -27,7 +30,9 @@
         <activity
             android:name=".MadLibStevesDreamDisplayActivity"
             android:exported="false" />
-
+        <activity android:name=".MadLibsWOOLOO2Activity" />
+        <activity android:name=".MadLibsWoolooFantasyDisplayActivity" />
+        <activity android:name=".MadLibsWoolooStoryPickerActivity" />
     </application>
 
 </manifest>
