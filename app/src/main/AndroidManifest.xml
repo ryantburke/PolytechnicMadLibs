@@ -27,6 +27,8 @@
         <activity
             android:name=".MadLibStevesDreamDisplayActivity"
             android:exported="false" />
+        <activity android:name="com.poly.madlibs.MadLibDragonSlayerActivity" />
+        <activity android:name="com.poly.madlibs.MadLibDragonSlayerDisplayActivity" />
 
     </application>
 
