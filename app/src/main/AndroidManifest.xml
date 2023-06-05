@@ -33,6 +33,8 @@
         <activity android:name=".MadLibsWOOLOO2Activity" />
         <activity android:name=".MadLibsWoolooFantasyDisplayActivity" />
         <activity android:name=".MadLibsWoolooStoryPickerActivity" />
+        <activity android:name="com.poly.madlibs.MadLibDisplayActivity" />
+        <activity android:name="com.poly.madlibs.MadLibRegularDayActivity" />
     </application>
 
 </manifest>
