@@ -32,7 +32,6 @@ public class ChooseMadlibsFragment extends Fragment {
 
     private Context context;
     private ArrayList<MadLibsModel> madLibsList;
-    private MadLibsAdapter madLibsAdapter;
     private RecyclerView recyclerView;
 
     private ListView listView;
