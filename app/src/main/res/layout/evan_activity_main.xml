@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MadLibsWOOLOO2Activity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="42dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="42dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Mad Libs"
+            android:textAlignment="center"
+            android:textSize="42sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="23dp"
+            android:text="The Adventure of Nusku"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill In The Boxes Below To Generate A Mad Lib" />
+
+        <EditText
+            android:id="@+id/es_first"
+            android:layout_width="302dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:hint="Noun (place)"
+            android:enableOnBackInvokedCallback="true"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/es_second"
+            android:layout_width="302dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="2dp"
+            android:ems="10"
+            android:enableOnBackInvokedCallback="true"
+            android:hint="Adjective"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/es_third"
+            android:layout_width="302dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:enableOnBackInvokedCallback="true"
+            android:hint="Adverb (How)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/es_fourth"
+            android:layout_width="302dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:enableOnBackInvokedCallback="true"
+            android:hint="Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/es_fifth"
+            android:layout_width="302dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:enableOnBackInvokedCallback="true"
+            android:hint="Alignment"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/es_sixth"
+            android:layout_width="302dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:enableOnBackInvokedCallback="true"
+            android:hint="Verb"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/es_seventh"
+            android:layout_width="302dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:enableOnBackInvokedCallback="true"
+            android:hint="Weapon"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/es_eighth"
+            android:layout_width="302dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:enableOnBackInvokedCallback="true"
+            android:hint="Animal"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/es_ninth"
+            android:layout_width="302dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:enableOnBackInvokedCallback="true"
+            android:hint="Number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/es_tenth"
+            android:layout_width="302dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:enableOnBackInvokedCallback="true"
+            android:hint="Win or Lose?"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/es_eleventh"
+            android:layout_width="302dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:enableOnBackInvokedCallback="true"
+            android:hint="Adjective"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
