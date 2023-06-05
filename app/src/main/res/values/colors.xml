@@ -12,5 +12,7 @@
     <color name="stevesdream_hint_txt">#0B040B</color>
     <color name="stevesdream_btn_txt">#314AA3</color>
     <color name="stevesdream_btn_bg">#04040B</color>
+    <color name="joes_background">#42c5f5</color>
+    <color name="joes_text">#f00707</color>
 
 </resources>
