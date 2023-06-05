@@ -18,5 +18,7 @@
     <color name="nightintheforest_txt_btn">#FFFFFFFF</color>
     <color name="nightintheforest_txt_hint">#FFFFFF</color>
     <color name="nightintheforest_txt">#FFFFFF</color>
+    <color name="joes_background">#42c5f5</color>
+    <color name="joes_text">#f00707</color>
 
 </resources>

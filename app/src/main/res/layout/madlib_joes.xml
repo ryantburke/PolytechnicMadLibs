@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/joes_background"
+    tools:context=".MadLibJoesActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28180575" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10948905" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9026764" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline5">
+
+        <EditText
+            android:id="@+id/et_adjective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Adjective to describe your day"
+            android:textColorHint="@color/joes_text"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Color"
+            android:textColorHint="@color/joes_text"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Vehicle"
+            android:textColorHint="@color/joes_text"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_adjective2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@color/joes_text"
+            android:hint="Adjective to describe sum1 u dont like"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_color2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@color/joes_text"
+            android:hint="Color "
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@color/joes_text"
+            android:hint="Number between 1 and 60"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_fruit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@color/joes_text"
+            android:hint="Fruit"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_bodyPart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@color/joes_text"
+            android:hint="Body Part"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_fruit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Fruit "
+            android:textColorHint="@color/joes_text"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@color/joes_text"
+            android:hint="Place"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btn_generate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start my day at Joes🍦" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="136dp"
+        android:layout_height="193dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307"
+        app:srcCompat="@drawable/joes_image2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
