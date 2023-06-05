@@ -12,5 +12,11 @@
     <color name="stevesdream_hint_txt">#0B040B</color>
     <color name="stevesdream_btn_txt">#314AA3</color>
     <color name="stevesdream_btn_bg">#04040B</color>
+    <color name="nightintheforest_txt_title">#2E7D32</color>
+    <color name="nightintheforest_bg">#4DB6AC</color>
+    <color name="nightintheforest_bg_btn">#004D40</color>
+    <color name="nightintheforest_txt_btn">#FFFFFFFF</color>
+    <color name="nightintheforest_txt_hint">#FFFFFF</color>
+    <color name="nightintheforest_txt">#FFFFFF</color>
 
 </resources>
