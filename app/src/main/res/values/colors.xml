@@ -31,5 +31,12 @@
     <color name="fooding_bg">#9CF3ADFF</color>
     <color name="fooding_txt_title">#0C7335</color>
     <color name="fooding_txt_hints">#BE2FA695</color>
+    <color name="birthdayparty_txt_title">#CF1C1C</color>
+    <color name="birthdaypartyy_txt_title">#2A4858</color>
+    <color name="birthdayparty_bg">#C8CBDB</color>
+    <color name="birthdaypartyy_bg">#C8CBDB</color>
+    <color name="birthdayparty_bg_btn">#E10D0D</color>
+    <color name="birthdayparty_txt_btn">#673AB7</color>
+    <color name="birthdayparty_txt_hint">#2A4858</color>
 
 </resources>
