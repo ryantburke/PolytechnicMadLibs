@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9f1ff"
+    tools:context=".MadLibRoadTripActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9137931" />
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amethysta"
+            android:text="Create Your Own Mad Lib"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/roadtrip_title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amethysta"
+            android:text="Enter information below to create your own story."
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/roadtrip_title" />
+
+        <TextView
+            android:id="@+id/tv_road"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amethysta"
+            android:text="Road Trip!"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/roadtrip_title"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/et_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="time:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_verb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="verb:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_verb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="another verb:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_adj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="adjective:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_adj2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="another adjective:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="color:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="shape:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="city:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="amount of money:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="music artist:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_animal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="animal:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_drink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="drink:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <EditText
+            android:id="@+id/et_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:hint="food:"
+            android:inputType="text"
+            android:textColorHint="@color/roadtrip_text" />
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="9dp"
+            android:backgroundTint="@color/roadtrip_title"
+            android:fontFamily="@font/amethysta"
+            android:text="create!"
+            android:textColor="#d9f1ff" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

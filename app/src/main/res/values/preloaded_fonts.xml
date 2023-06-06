@@ -2,7 +2,9 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/alike_angular</item>
+        <item>@font/amethysta</item>
         <item>@font/kadwa</item>
         <item>@font/pacifico</item>
+        <item>@font/amethysta</item>
     </array>
 </resources>
