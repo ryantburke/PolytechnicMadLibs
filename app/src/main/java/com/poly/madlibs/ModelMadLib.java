@@ -4,19 +4,19 @@ import android.app.Activity;
 
 import java.io.Serializable;
 
-public class MadLibsModel implements Serializable {
+public class ModelMadLib implements Serializable {
 
     private Activity activity;
     private String name, author;
     private int imageId;
 
-    public MadLibsModel(String name, String author, int imageId) {
+    public ModelMadLib(String name, String author, int imageId) {
         this.name = name;
         this.author = author;
         this.imageId = imageId;
     }
 
-    public MadLibsModel(String name, String author, Activity activity,  int imageId) {
+    public ModelMadLib(String name, String author, Activity activity, int imageId) {
         this.activity = activity;
         this.name = name;
         this.author = author;

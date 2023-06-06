@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/birthdayparty_bg"
-    tools:context=".MadLibsBirthdayPartyActivity">
+    tools:context=".MadLibBirthdayPartyActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

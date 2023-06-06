@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class MadLibsBirthdayPartyDisplayActivity extends AppCompatActivity {
+public class MadLibBirthdayPartyDisplayActivity extends AppCompatActivity {
 
     TextView tvTopText;
     TextView tvStory;

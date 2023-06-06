@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MadLibsFoodingActivity extends AppCompatActivity {
+public class MadLibFoodingActivity extends AppCompatActivity {
     private Button btnGenerate;
     private EditText firstName;
     private EditText lastName;
@@ -56,7 +56,7 @@ public class MadLibsFoodingActivity extends AppCompatActivity {
         btnGenerate = findViewById(R.id.btn_generate);
 
 
-        Intent intentDisplay = new Intent(MadLibsFoodingActivity.this, MadLibsFoodingDisplayActivity.class);
+        Intent intentDisplay = new Intent(MadLibFoodingActivity.this, MadLibFoodingDisplayActivity.class);
 
 
         btnGenerate.setOnClickListener(new View.OnClickListener() {

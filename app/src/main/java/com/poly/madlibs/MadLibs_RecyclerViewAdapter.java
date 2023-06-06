@@ -17,9 +17,9 @@ public class MadLibs_RecyclerViewAdapter extends RecyclerView.Adapter<MadLibs_Re
 
     Context context;
     private OnItemClickListener listener;
-    ArrayList<MadLibsModel> madLibsModels;
+    ArrayList<ModelMadLib> madLibsModels;
 
-    public MadLibs_RecyclerViewAdapter(Context context, ArrayList<MadLibsModel> madLibsModels) {
+    public MadLibs_RecyclerViewAdapter(Context context, ArrayList<ModelMadLib> madLibsModels) {
         this.context = context;
         this.madLibsModels = madLibsModels;
     }
@@ -48,7 +48,7 @@ public class MadLibs_RecyclerViewAdapter extends RecyclerView.Adapter<MadLibs_Re
     }
 
     public interface OnItemClickListener {
-        void onItemClick(MadLibsModel model);
+        void onItemClick(ModelMadLib model);
     }
 
 
@@ -66,7 +66,7 @@ public class MadLibs_RecyclerViewAdapter extends RecyclerView.Adapter<MadLibs_Re
             tvAuthor = itemView.findViewById(R.id.tv_author);
         }
 
-        public void bind(final MadLibsModel model, final OnItemClickListener listener) {
+        public void bind(final ModelMadLib model, final OnItemClickListener listener) {
             tvTitle.setText((model.getTitle()));
             tvAuthor.setText(model.getAuthor());
             imageView.setImageResource(model.getImageId());

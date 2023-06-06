@@ -87,7 +87,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_evan_fantasy" />
+        app:srcCompat="@drawable/evan_fantasy" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -98,7 +98,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline6"
-        app:srcCompat="@drawable/image_evan_chaotic" />
+        app:srcCompat="@drawable/evan_chaotic" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -120,6 +120,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline8"
-        app:srcCompat="@drawable/image_evan_hell" />
+        app:srcCompat="@drawable/evan_hell" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

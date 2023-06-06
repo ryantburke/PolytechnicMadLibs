@@ -31,7 +31,7 @@ public class ChooseMadlibsFragment extends Fragment {
 
 
     private Context context;
-    private ArrayList<MadLibsModel> madLibsList;
+    private ArrayList<ModelMadLib> madLibsList;
     private RecyclerView recyclerView;
 
     private ListView listView;
@@ -47,7 +47,7 @@ public class ChooseMadlibsFragment extends Fragment {
      * @return A new instance of fragment MadlibsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ChooseMadlibsFragment newInstance(ArrayList<MadLibsModel> madlibs) {
+    public static ChooseMadlibsFragment newInstance(ArrayList<ModelMadLib> madlibs) {
         ChooseMadlibsFragment fragment = new ChooseMadlibsFragment();
         Bundle args = new Bundle();
         args.putSerializable(MADLIBS,madlibs);
@@ -81,23 +81,24 @@ public class ChooseMadlibsFragment extends Fragment {
                 LinearLayoutManager(view.getContext()));
 
         //construct list of madlibs
-        madLibsList = new ArrayList<MadLibsModel>();
-        madLibsList.add(new MadLibsModel("Steve's Dream","Steve M", new MadLibStevesDreamActivity(), R.drawable.stevesdream_image));
-        madLibsList.add(new MadLibsModel("Evan's Choices","Evan S", new MadLibsWOOLOO2Activity(), R.drawable.image_evan_cover));
-        madLibsList.add(new MadLibsModel("Night in the Forest","Devian Zendejas", new MadLibsNightInTheForestActivity(), R.drawable.nightintheforest_image));
-        madLibsList.add(new MadLibsModel("Joe's","Diego Guerra", new MadLibJoesActivity(), R.drawable.joes_image));
-        madLibsList.add(new MadLibsModel("Toby's Adventure","Giovanni Marcelo", new MadLibTobysAdventureActivity(), R.drawable.tobysadventure_image));
-        madLibsList.add(new MadLibsModel("Dragon Slayer","JD Cajimat", new MadLibDragonSlayerActivity(), R.drawable.dragonslayer_image));
-        madLibsList.add(new MadLibsModel("Fooding","Jovanni T", new MadLibsFoodingActivity(), R.drawable.fooding_image));
-        madLibsList.add(new MadLibsModel("The Birthday Party","Kevin Guzman", new MadLibsBirthdayPartyActivity(), R.drawable.birthdayparty_image));
-        madLibsList.add(new MadLibsModel("Jom and Terry","Matthew Yen", new MadLibJomandTerryActivity(), R.drawable.jomterry_image));
+        madLibsList = new ArrayList<ModelMadLib>();
+
+        madLibsList.add(new ModelMadLib("Evan's Choices","Evan Soth", new MadLibsWOOLOO2Activity(), R.drawable.evan_cover));
+        madLibsList.add(new ModelMadLib("Jom and Terry","Matthew Yen", new MadLibJomandTerryActivity(), R.drawable.jomterry_image));
+        madLibsList.add(new ModelMadLib("Joe's","Diego Guerra", new MadLibJoesActivity(), R.drawable.joes_image));
+        madLibsList.add(new ModelMadLib("Night in the Forest","Devian Zendejas", new MadLibsNightInTheForestActivity(), R.drawable.nightintheforest_image));
+        madLibsList.add(new ModelMadLib("Toby's Adventure","Giovanni Marcelo", new MadLibTobysAdventureActivity(), R.drawable.tobysadventure_image));
+        madLibsList.add(new ModelMadLib("Dragon Slayer","JD Cajimat", new MadLibDragonSlayerActivity(), R.drawable.dragonslayer_image));
+        madLibsList.add(new ModelMadLib("Fooding","Jovanni Trujillo", new MadLibFoodingActivity(), R.drawable.fooding_image));
+        madLibsList.add(new ModelMadLib("The Birthday Party","Kevin Guzman", new MadLibBirthdayPartyActivity(), R.drawable.birthdayparty_image));
+        madLibsList.add(new ModelMadLib("Steve's Dream","Steve Marquez", new MadLibStevesDreamActivity(), R.drawable.stevesdream_image));
 
         //set adapter
         MadLibs_RecyclerViewAdapter adapter = new MadLibs_RecyclerViewAdapter(context, madLibsList);
         recyclerView.setAdapter(adapter);
         adapter.setOnClickListener(new MadLibs_RecyclerViewAdapter.OnItemClickListener() {
             @Override
-            public void onItemClick(MadLibsModel model) {
+            public void onItemClick(ModelMadLib model) {
                 Log.d("Clicked",model.getTitle());
                 Intent intent = new Intent(context,model.getActivity().getClass());
                 startActivity(intent);

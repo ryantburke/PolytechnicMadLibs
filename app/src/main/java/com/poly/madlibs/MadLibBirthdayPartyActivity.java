@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MadLibsBirthdayPartyActivity extends AppCompatActivity {
+public class MadLibBirthdayPartyActivity extends AppCompatActivity {
 
     EditText etName;
     EditText etAge;
@@ -46,7 +46,7 @@ public class MadLibsBirthdayPartyActivity extends AppCompatActivity {
 
 
 
-        Intent secondActivity = new Intent(MadLibsBirthdayPartyActivity.this, MadLibsBirthdayPartyDisplayActivity.class);
+        Intent secondActivity = new Intent(MadLibBirthdayPartyActivity.this, MadLibBirthdayPartyDisplayActivity.class);
 
         String sendThisString = "Whatever string I want to send";
         String sendThisToo = "The other string I want to send";
