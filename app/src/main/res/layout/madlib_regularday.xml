@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#734C95"
+    android:backgroundTint="#D8BEF3"
     tools:context=".MadLibRegularDayActivity">
 
     <androidx.constraintlayout.widget.Barrier
@@ -34,82 +36,100 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline2">
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:text="Create Your own story"
             android:textAlignment="center"
-            android:text="TextView" />
+            android:textColor="#0E0E0E"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/tv_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6515B5"
             android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Name"
             android:inputType="text"
-            android:hint="Name" />
+            android:textColor="#7C2D2D" />
 
         <EditText
             android:id="@+id/tv_color"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6515B4"
             android:ems="10"
-            android:inputType="text"
-            android:hint="Color" />
+            android:fontFamily="serif"
+            android:hint="Color"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/tv_noun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6515B4"
             android:ems="10"
-            android:inputType="text"
-            android:hint="Noun" />
+            android:fontFamily="serif"
+            android:hint="Noun"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/tv_adjective"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6515B2"
             android:ems="10"
-            android:inputType="text"
-            android:hint="Adjective" />
+            android:fontFamily="serif"
+            android:hint="Adjective"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/tv_day"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6515B3"
             android:ems="10"
-            android:inputType="text"
-            android:hint="Day of the week" />
+            android:fontFamily="serif"
+            android:hint="Day of the week"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/tv_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6515B3"
             android:ems="10"
-            android:inputType="text"
-            android:hint="Item" />
+            android:fontFamily="serif"
+            android:hint="Item"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/tv_word"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6515B2"
             android:ems="10"
-            android:inputType="text"
-            android:hint="word" />
+            android:fontFamily="serif"
+            android:hint="word"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/tv_random"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6515B2"
             android:ems="10"
-            android:inputType="text"
-            android:hint="random" />
+            android:fontFamily="serif"
+            android:hint="random"
+            android:inputType="text" />
 
 
         <Button
@@ -117,7 +137,11 @@
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginBottom="140dp"
-            android:text="Generate" />
+            android:fontFamily="cursive"
+            android:text="Generate"
+            android:textColor="#C1B6DA"
+            android:textSize="34sp"
+            app:strokeColor="#100F0F" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
