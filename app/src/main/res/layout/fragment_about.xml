@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/poly_yellow"
     android:orientation="vertical"
-    tools:context=".SavedFragment">
+    tools:context=".AboutFragment">
 
     <TextView
         android:id="@+id/textView2"

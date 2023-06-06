@@ -34,8 +34,6 @@ public class ChooseMadlibsFragment extends Fragment {
     private ArrayList<ModelMadLib> madLibsList;
     private RecyclerView recyclerView;
 
-    private ListView listView;
-
     public ChooseMadlibsFragment() {
         // Required empty public constructor
     }
@@ -83,7 +81,7 @@ public class ChooseMadlibsFragment extends Fragment {
         //construct list of madlibs
         madLibsList = new ArrayList<ModelMadLib>();
 
-        madLibsList.add(new ModelMadLib("Evan's Choices","Evan Soth", new MadLibsWOOLOO2Activity(), R.drawable.evan_cover));
+        madLibsList.add(new ModelMadLib("Evan's Choices","Evan Soth", new MadLibsWOOLOO2Activity(), R.drawable.image_evan_cover));
         madLibsList.add(new ModelMadLib("Jom and Terry","Matthew Yen", new MadLibJomandTerryActivity(), R.drawable.jomterry_image));
         madLibsList.add(new ModelMadLib("Joe's","Diego Guerra", new MadLibJoesActivity(), R.drawable.joes_image));
         madLibsList.add(new ModelMadLib("Night in the Forest","Devian Zendejas", new MadLibsNightInTheForestActivity(), R.drawable.nightintheforest_image));
