@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:backgroundTint="#0F1F78"
+    android:backgroundTintMode="add"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MadLibSummerVacationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00673AB7"
+        android:backgroundTint="#1FDFF8"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Summer Vacation"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#EBF0F1"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/abril_fatface"
+        android:hint="Create Your Summer!!!"
+        android:textAlignment="center"
+        android:textColor="#F9F9F9"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        android:textColor="#FAF8F8" />
+
+    <EditText
+        android:id="@+id/et_noun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Noun"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/et_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Location"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/et_favoriteActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Favorite Activity"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/et_yourDreamVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Your Dream Vehicle"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/et_favoriteFoodOrDrink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Favorite Food or Drink"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/et_friend1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Friend 1"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/et_friend2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Friend 2 "
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/et_favoriteSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Favorite Song"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/et_petName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Pet Name "
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Generate"
+        app:iconTint="#00FFC107" />
+
+
+</LinearLayout>

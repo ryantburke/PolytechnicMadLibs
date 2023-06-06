@@ -47,6 +47,7 @@
         <activity android:name="com.poly.madlibs.MadLibBirthdayPartyDisplayActivity" />
         <activity android:name="com.poly.madlibs.MadLibJomandTerryActivity" />
         <activity android:name="com.poly.madlibs.MadLibJomandTerryDisplayActivity" />
+        <activity android:name="com.poly.madlibs.MadLibSummerVacationActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
