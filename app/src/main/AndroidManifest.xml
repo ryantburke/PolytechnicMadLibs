@@ -53,6 +53,8 @@
         <activity android:name="com.poly.madlibs.MadLibBirthdayPartyDisplayActivity" />
         <activity android:name="com.poly.madlibs.MadLibJomandTerryActivity" />
         <activity android:name="com.poly.madlibs.MadLibJomandTerryDisplayActivity" />
+        <activity android:name="com.poly.madlibs.MadLibMuggingActivity" />
+        <activity android:name="com.poly.madlibs.MadLibMuggingDisplayActivity" />
         <activity android:name="com.poly.madlibs.MadLibRoadTripActivity" />
         <activity android:name="com.poly.madlibs.MadLibRoadTripDisplayActivity" />
         <activity android:name="com.poly.madlibs.MadLibConcerNightDisplayActivity" />
