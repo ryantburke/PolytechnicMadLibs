@@ -55,6 +55,8 @@
         <activity android:name="com.poly.madlibs.MadLibJomandTerryDisplayActivity" />
         <activity android:name="com.poly.madlibs.MadLibRoadTripActivity" />
         <activity android:name="com.poly.madlibs.MadLibRoadTripDisplayActivity" />
+        <activity android:name="com.poly.madlibs.MadLibConcerNightDisplayActivity" />
+        <activity android:name="com.poly.madlibs.MadLibConcertNightActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
