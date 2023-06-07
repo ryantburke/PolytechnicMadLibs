@@ -11,6 +11,7 @@
        android:layout_width="match_parent"
        android:id="@+id/nav"
        android:layout_alignParentBottom="true"
+       app:backgroundTint="@color/poly_green"
        app:menu="@menu/menu_bar"
        app:itemTextColor="@drawable/sel"
        app:itemIconTint="@drawable/sel"
