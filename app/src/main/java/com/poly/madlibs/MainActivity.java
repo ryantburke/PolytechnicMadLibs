@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 int itemId = item.getItemId();
                 if (itemId == R.id.madlibs) {
                     replaceFragment(new ChooseMadlibsFragment());
-                } else if (itemId == R.id.bookmarks) {
+                } else if (itemId == R.id.about) {
                     replaceFragment(new AboutFragment());
                 }
 

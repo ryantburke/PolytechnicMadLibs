@@ -13,6 +13,15 @@
         android:theme="@style/Theme.PolytechnicMadLibs"
         tools:targetApi="31">
         <activity
+            android:name=".LaunchActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MadLibsWoolooApocalypseDisplayActivity"
             android:exported="false" />
         <activity
@@ -39,41 +48,40 @@
         <activity android:name=".MadLibsWOOLOO2Activity" />
         <activity android:name=".MadLibsWoolooFantasyDisplayActivity" />
         <activity android:name=".MadLibsWoolooStoryPickerActivity" />
-        <activity android:name="com.poly.madlibs.MadLibsNightInTheForestActivity" />
-        <activity android:name="com.poly.madlibs.MadLibsNightInTheForestDisplayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibJoesActivity" />
-        <activity android:name="com.poly.madlibs.MadLibsJoesDisplayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibTobysAdventureActivity" />
-        <activity android:name="com.poly.madlibs.MadLibTobysAdventureDisplayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibDragonSlayerActivity" />
-        <activity android:name="com.poly.madlibs.MadLibDragonSlayerDisplayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibFoodingActivity" />
-        <activity android:name="com.poly.madlibs.MadLibFoodingDisplayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibBirthdayPartyActivity" />
-        <activity android:name="com.poly.madlibs.MadLibBirthdayPartyDisplayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibJomandTerryActivity" />
-        <activity android:name="com.poly.madlibs.MadLibJomandTerryDisplayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibMuggingActivity" />
-        <activity android:name="com.poly.madlibs.MadLibMuggingDisplayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibRoadTripActivity" />
-        <activity android:name="com.poly.madlibs.MadLibRoadTripDisplayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibConcerNightDisplayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibConcertNightActivity" />
+        <activity android:name=".MadLibsNightInTheForestActivity" />
+        <activity android:name=".MadLibsNightInTheForestDisplayActivity" />
+        <activity android:name=".MadLibJoesActivity" />
+        <activity android:name=".MadLibsJoesDisplayActivity" />
+        <activity android:name=".MadLibTobysAdventureActivity" />
+        <activity android:name=".MadLibTobysAdventureDisplayActivity" />
+        <activity android:name=".MadLibDragonSlayerActivity" />
+        <activity android:name=".MadLibDragonSlayerDisplayActivity" />
+        <activity android:name=".MadLibFoodingActivity" />
+        <activity android:name=".MadLibFoodingDisplayActivity" />
+        <activity android:name=".MadLibBirthdayPartyActivity" />
+        <activity android:name=".MadLibBirthdayPartyDisplayActivity" />
+        <activity android:name=".MadLibJomandTerryActivity" />
+        <activity android:name=".MadLibJomandTerryDisplayActivity" />
+        <activity android:name=".MadLibMuggingActivity" />
+        <activity android:name=".MadLibMuggingDisplayActivity" />
+        <activity android:name=".MadLibRoadTripActivity" />
+        <activity android:name=".MadLibRoadTripDisplayActivity" />
+        <activity android:name=".MadLibConcerNightDisplayActivity" />
+        <activity android:name=".MadLibConcertNightActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name="com.poly.madlibs.MadLibDisplayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibRegularDayActivity" />
-        <activity android:name="com.poly.madlibs.MadLibSummerVacationActivity" />
-        <activity android:name="com.poly.madlibs.MadLibRafaelActivity" />
-        <activity android:name="com.poly.madlibs.MadLibRafaelDisplayActivity" />
+        <activity android:name=".MadLibDisplayActivity" />
+        <activity android:name=".MadLibRegularDayActivity" />
+        <activity android:name=".MadLibSummerVacationActivity" />
+        <activity android:name=".MadLibRafaelActivity" />
+        <activity android:name=".MadLibRafaelDisplayActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
     </application>
 
 </manifest>

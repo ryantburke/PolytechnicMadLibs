@@ -52,7 +52,6 @@ public class MadLibs_RecyclerViewAdapter extends RecyclerView.Adapter<MadLibs_Re
     }
 
 
-
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         ImageView imageView;

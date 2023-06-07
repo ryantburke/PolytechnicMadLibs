@@ -8,7 +8,7 @@
         />
 
     <item
-        android:id="@+id/bookmarks"
+        android:id="@+id/about"
         android:icon="@drawable/baseline_emoji_emotions_24"
         android:title="About"
         />
