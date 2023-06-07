@@ -66,10 +66,12 @@
 
         <activity android:name="com.poly.madlibs.MadLibDisplayActivity" />
         <activity android:name="com.poly.madlibs.MadLibRegularDayActivity" />
+        <activity android:name="com.poly.madlibs.MadLibSummerVacationActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>
