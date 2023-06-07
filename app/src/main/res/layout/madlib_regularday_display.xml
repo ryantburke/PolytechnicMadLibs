@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDBBE7"
+    android:foregroundTint="#DEBCE8"
+    android:orientation="vertical"
+    tools:context=".MadLibDisplayActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        app:srcCompat="@drawable/regularday_image" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0BEEA"
+        android:fontFamily="cursive"
+        android:text="A Day Just A Regular Day"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_story"
+        android:layout_width="match_parent"
+        android:layout_height="413dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#DFBDE9"
+        android:backgroundTint="#DEBCE8"
+        android:fontFamily="casual"
+        android:text="Story goes here......................................................................."
+        android:textColor="#180919" />
+
+
+</LinearLayout>
