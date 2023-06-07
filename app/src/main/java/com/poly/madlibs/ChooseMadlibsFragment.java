@@ -95,6 +95,7 @@ public class ChooseMadlibsFragment extends Fragment {
         madLibsList.add(new ModelMadLib("An Eventful Mugging","Jacob Congolino", new MadLibMuggingActivity(), R.drawable.mugging_image2));
         madLibsList.add(new ModelMadLib("Just a Regular Day","Kayla Deng-Martinez", new MadLibRegularDayActivity(), R.drawable.regularday_image));
         madLibsList.add(new ModelMadLib("Summer Vacation","Lex Battles", new MadLibSummerVacationActivity(), R.drawable.summervacation_image));
+        madLibsList.add(new ModelMadLib("Maria's House","Rafael Valencia", new MadLibRafaelActivity(), R.drawable.rafael_image));
 
         //set adapter
         MadLibs_RecyclerViewAdapter adapter = new MadLibs_RecyclerViewAdapter(context, madLibsList);
