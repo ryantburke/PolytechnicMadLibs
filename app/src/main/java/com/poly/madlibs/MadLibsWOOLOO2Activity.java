@@ -48,30 +48,27 @@ public class MadLibsWOOLOO2Activity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String storyFantasy = "";
-                storyFantasy +="Welcome to Drenkon, " + etName.getText() + " , be careful not to upset the natives of this place as you will face consequences";
-                storyFantasy += "You walk through The Forest of Dreams, be careful though because something " + etAdjective.getText() + " can show up.";
-                storyFantasy += "As you walk through the forest you spot a " + etAnimal.getText() + ", a very common creature in the forest.";
-                storyFantasy += "As you past The Forest of Dreams you come across a Wizard asking what your Alignment is " + etAlignment.getText() + " you said and asks you to follow him.";
-                storyFantasy += "You follow the Wizard " + etAdverb.getText() + ", he whispered something then turned around and looks at you.";
-                storyFantasy += "When he does that " + etNumber.getText() + " zombies show up surrounding you,he tells you that he is a Necromancer collecting travelers bodies to rule the world with his undead army.";
-                storyFantasy += "You feel " + etVerb.getText() + " about the situation, but steel your resolve and get ready for your first fight in this world.";
-                storyFantasy += "You draw your " + etWeapon.getText() + " and start using it to fight the zombies in front of you not knowing if you win or not.";
-                storyFantasy += "You start winning the battle and eventually slayed the last zombie, now looking at the Necromancer he looks " + etAdjective2.getText() + ", but that doesn't stop you from killing him as well to stop him from making an army to rule the world.";
-                storyFantasy += "As you walk past his body you see the familiar place of " + etNoun.getText() + ", and start walking towards it.";
-                storyFantasy += "At last you make it only to find a note that says 'YOU HAVE " + etChoice.getText() + "' knowing that you finally remember everything.";
+                storyFantasy +="Welcome to Drenkon, " + etName.getText() + ", be careful not to upset the natives of this place as you will face consequences";
+                storyFantasy += " You walk through The Forest of Dreams, be careful though because something " + etAdjective.getText() + " can show up.";
+                storyFantasy += " As you walk through the forest you spot a " + etAnimal.getText() + ", a very common creature in the forest.";
+                storyFantasy += " As you past The Forest of Dreams you come across a Wizard asking what your Alignment is '" + etAlignment.getText() + "' you said and he asks you to follow him.";
+                storyFantasy += " You follow the Wizard " + etAdverb.getText() + ", he whispered something then turned around and looks at you.";
+                storyFantasy += " When he does that " + etNumber.getText() + " zombies show up surrounding you, he tells you that he is a Necromancer collecting travelers bodies to rule the world with his undead army.";
+                storyFantasy += " You feel " + etVerb.getText() + " about the situation, but steel your resolve and get ready for your first fight in this world.";
+                storyFantasy += " You draw your " + etWeapon.getText() + " and start using it to fight the zombies in front of you not knowing if you will win or not.";
+                storyFantasy += " You start winning the battle and eventually slayed the last zombie, now looking at the Necromancer he looks " + etAdjective2.getText() + ", but that doesn't stop you from killing him as to stop him from making an undead army.";
+                storyFantasy += " As you walk past his body you see the familiar place of " + etNoun.getText() + ", and start walking towards it.";
+                storyFantasy += " At last you make it only to find a note that says 'YOU " + etChoice.getText() + "' knowing that you finally remember everything that happened.";
 
                 String storyApocalypse = "";
-                storyApocalypse += "";
-                storyApocalypse += "";
-                storyApocalypse += "";
-                storyApocalypse += "";
-                storyApocalypse += "";
-                storyApocalypse += "";
-                storyApocalypse += "";
-                storyApocalypse += "";
-                storyApocalypse += "";
-                storyApocalypse += "";
-                storyApocalypse += "";
+                storyApocalypse += "In a place that is in ruins " + etName.getText() + " and Dinglevaious King the III arrived in " + etNoun.getText() + " where both of you are " + etAlignment.getText() + ".";
+                storyApocalypse += " They both noticed " + etNoun.getText() + " had a " + etWeapon.getText() + " leading into a dimension with planes falling and building on fire.";
+                storyApocalypse += " In the dimension " + etNumber.getText() + " of creatures appears, but what they don't notice is the deadly beast behind them.";
+                storyApocalypse += " Behind them there was " + etAnimal.getText() + " with " + etNumber.getText() + " of legs! ";
+                storyApocalypse += etName.getText() + " and Dinglevaious is " + etAdjective.getText() + " due to the " + etAdverb.getText() + " creature behind them. ";
+                storyApocalypse += etName.getText() + " and Dinglevaious are " + etAdjective2.getText() + " but steel themselves for the worst and first fight of their life.";
+                storyApocalypse += " Luckily they had " + etWeapon.getText() + " to help them defeat the boss, but with their lack of skill could they?";
+                storyApocalypse += " After tireless fighting they finally " + etChoice.getText() + ".";
 
                 String storyMedieval = "";
                 storyMedieval += "";
@@ -87,17 +84,17 @@ public class MadLibsWOOLOO2Activity extends AppCompatActivity {
                 storyMedieval += "";
 
                 String storyHell = "";
-                storyHell += "";
-                storyHell += "";
-                storyHell += "";
-                storyHell += "";
-                storyHell += "";
-                storyHell += "";
-                storyHell += "";
-                storyHell += "";
-                storyHell += "";
-                storyHell += "";
-                storyHell += "";
+                storyHell += "Nave is the King of Demons, he took the place of the previous king after the previous king lost to " + etNumber.getText() + etAnimal.getText() + "'s.";
+                storyHell += " Suddenly a portal opens in hell revealing" + etName.getText() + ", apparently he was thrown in hell after " + etVerb.getText() + "ing into the place.";
+                storyHell += " Nave tries to " + etVerb.getText() + etName.getText() + ", but then stops after finding out that " + etName.getText() + " wanted to help him.";
+                storyHell += " Nave shows " + etName.getText() + " his weapon revealing " + etWeapon.getText() + " telling " + etName.getText() + " that it helps him collect souls to fuel his power.";
+                storyHell += " After those events they go to " + etNoun.getText() + ", a place with countless souls.";
+                storyHell += " Nave tells " + etName.getText() + " that if they don't get " + etNumber.getText() + " of souls by midnight then " + etName.getText() + " will be stuck in hell FOREVER.";
+                storyHell += " Nave gives his " + etWeapon.getText() + " to " + etName.getText() + ", telling him to collect his first soul to escape.";
+                storyHell += " After some conviction " + etName.getText() + " grabs the " + etWeapon.getText() + " and uses it " + etAdverb.getText() + ".";
+                storyHell += " Before midnight hits they collected as much souls as they needed, but when they were finally about to collect the last soul a shadow loomed over them.";
+                storyHell += " Nave tells " + etName.getText() + " to get back holding the beast off, but " + etName.getText() + ", but instead joins him to fight the " + etAdjective.getText() + ", a mindless beast, together and after a relentless fight they " + etChoice.getText() + ".";
+                storyHell += " They go back to the castle and that's when " + etName.getText() + etChoice.getText() + "'s his life.";
 
                 WOOLOOGENERATION.putExtra("fantasy",storyFantasy);
                 WOOLOOGENERATION.putExtra("apocalypse",storyApocalypse);

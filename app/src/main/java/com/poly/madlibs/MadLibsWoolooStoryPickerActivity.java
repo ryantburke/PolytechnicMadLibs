@@ -45,17 +45,17 @@ public class MadLibsWoolooStoryPickerActivity extends AppCompatActivity {
                    else if(btn.getId() == R.id.es_chaos){
                        story = intent.getStringExtra("apocalypse");
                        Log.i("story",story);
-                       storyImageId = R.drawable.evan_fantasy_story;
+                       storyImageId = R.drawable.evan_apocalypse_story;
                    }
                    else if(btn.getId() == R.id.es_medieval){
                        story = intent.getStringExtra("medieval");
                        Log.i("story",story);
-                       storyImageId = R.drawable.evan_fantasy_story;
+                       storyImageId = R.drawable.evan_medieval_story;
                    }
                    else if(btn.getId() == R.id.es_hell){
                        story = intent.getStringExtra("hell");
                        Log.i("story",story);
-                       storyImageId = R.drawable.evan_fantasy_story;
+                       storyImageId = R.drawable.evan_hell_story;
                    }
 
                    Log.i("story",story);

@@ -7,7 +7,7 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MadLibsWoolooMedievalDisplayActivity extends AppCompatActivity {
+public class MadLibsWoolooApocalypseDisplayActivity extends AppCompatActivity {
 
     private ImageView ivMain;
     private TextView tvStory;
@@ -15,10 +15,10 @@ public class MadLibsWoolooMedievalDisplayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.evan_activity_wooloomedieval);
+        setContentView(R.layout.evan_activity_woolooapocalypse);
 
         ivMain = findViewById(R.id.iv_main);
-        tvStory = findViewById(R.id.story_medieval);
+        tvStory = findViewById(R.id.story_apocalypse);
         String story = getIntent().getStringExtra("story");
         Log.i("story display",story);
         ivMain.setImageResource(getIntent().getIntExtra("image",0));

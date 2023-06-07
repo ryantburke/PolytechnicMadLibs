@@ -4,38 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MadLibsWoolooMedievalDisplayActivity">
+    tools:context=".MadLibsWoolooApocalypseDisplayActivity">
 
     <LinearLayout
-        android:layout_width="393dp"
-        android:layout_height="788dp"
+        android:layout_width="392dp"
+        android:layout_height="790dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.25" />
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/iv_main"
             android:layout_width="match_parent"
-            android:layout_height="195dp"
+            android:layout_height="197dp"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/evan_medieval_story" />
+            app:srcCompat="@drawable/evan_apocalypse_story" />
 
         <TextView
-            android:id="@+id/story_medieval"
+            android:id="@+id/story_apocalypse"
             android:layout_width="match_parent"
-            android:layout_height="590dp"
+            android:layout_height="586dp"
             android:text="Story" />
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
