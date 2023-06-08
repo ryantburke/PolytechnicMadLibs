@@ -71,17 +71,17 @@ public class MadLibsWOOLOO2Activity extends AppCompatActivity {
                 storyApocalypse += " After tireless fighting they finally " + etChoice.getText() + ".";
 
                 String storyMedieval = "";
-                storyMedieval += "";
-                storyMedieval += "";
-                storyMedieval += "";
-                storyMedieval += "";
-                storyMedieval += "";
-                storyMedieval += "";
-                storyMedieval += "";
-                storyMedieval += "";
-                storyMedieval += "";
-                storyMedieval += "";
-                storyMedieval += "";
+                storyMedieval += "Hey are you awake " + etName.getText() + "? We have to go now they are catching up.";
+                storyMedieval += " 'Who are they?' " + etName.getText() + " asked. What are you talking about did you hit your head too hard.";
+                storyMedieval += " While the both of you were talking a group of people apparently named the " + etAnimal.getText() + " ambushed you.";
+                storyMedieval += " Nowhere to hide now " + etName.getText() + " and Riley. Now give us what we want or else things will go " + etAdjective.getText() + " for you.";
+                storyMedieval += " Seeing that you can do nothing but fight you pull out your " + etWeapon.getText() + " and start fighting them.";
+                storyMedieval += " After many exchange of blows both side look " + etAdjective2.getText() + " 'YOU GAVE ME NO CHOICE, BUT TO USE THIS!' the Bandit Leader said " + etAdverb.getText() + ".";
+                storyMedieval += " The Bandit Leader then pulls out some kind of weapon of unknown origins that looks like a L but sideways, anyway knowing the danger you " + etVerb.getText() + " and get out of there.";
+                storyMedieval += " Once you got away from the Bandits you walk into a familiar place called " + etNoun.getText() + ", Riley told you the name, but after some recuperation Riley explains somethings to you.";
+                storyMedieval += " Apparently after going through " + etNumber.getText() + " of towns to find work you " + etChoice.getText() + " something of theirs and they want it back.";
+                storyMedieval += " Something tells you that you were pretty " + etAlignment.getText() + " and should just get " + etNumber.getText() + " of gold for them.";
+                storyMedieval += " After many days of collecting gold, you finally had enough gold to repay the bandits, but when you visited them, they were eaten by their mascot the " + etAnimal.getText() + ".";
 
                 String storyHell = "";
                 storyHell += "Nave is the King of Demons, he took the place of the previous king after the previous king lost to " + etNumber.getText() + etAnimal.getText() + "'s.";
