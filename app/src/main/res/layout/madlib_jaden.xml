@@ -4,7 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/jaden_bg"
     tools:context=".MadLibJadenActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -12,8 +27,8 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline22"
+        app:layout_constraintStart_toStartOf="@id/guideline18"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
@@ -21,7 +36,10 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/jaden_txt_title"
+            android:text="Crazy 8's" />
 
         <EditText
             android:id="@+id/et_noun"
@@ -29,6 +47,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
+            android:textColorHint="@color/jaden_txt_hint"
             android:hint="Noun" />
 
         <EditText
@@ -37,6 +56,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
+            android:textColorHint="@color/jaden_txt_hint"
             android:hint="Plural Noun" />
 
         <EditText
@@ -45,6 +65,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
+            android:textColorHint="@color/jaden_txt_hint"
             android:hint="Verb" />
 
         <EditText
@@ -53,6 +74,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
+            android:textColorHint="@color/jaden_txt_hint"
             android:hint="Adjective" />
 
         <EditText
@@ -61,6 +83,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
+            android:textColorHint="@color/jaden_txt_hint"
             android:hint="Adverb" />
 
         <EditText
@@ -69,6 +92,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
+            android:textColorHint="@color/jaden_txt_hint"
             android:hint="Color" />
 
         <EditText
@@ -77,6 +101,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
+            android:textColorHint="@color/jaden_txt_hint"
             android:hint="Food" />
 
         <EditText
@@ -85,12 +110,15 @@
             android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
+            android:textColorHint="@color/jaden_txt_hint"
             android:hint="Celebrity" />
 
         <Button
             android:id="@+id/btn_nextpage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/jaden_btn_bg"
+            android:textColor="@color/jaden_btn_txt"
             android:text="Generate" />
 
     </LinearLayout>
