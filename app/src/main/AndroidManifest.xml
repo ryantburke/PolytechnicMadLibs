@@ -78,6 +78,7 @@
         <activity android:name=".MadLibSummerVacationActivity" />
         <activity android:name=".MadLibRafaelActivity" />
         <activity android:name=".MadLibRafaelDisplayActivity" />
+        <activity android:name="com.poly.madlibs.MadLibJadenActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
