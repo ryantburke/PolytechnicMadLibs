@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,29 +23,55 @@ public class MadLibsWOOLOO2Activity extends AppCompatActivity {
     private EditText etNumber;
     private EditText etChoice;
     private EditText etAdjective2;
-    private Button Generate;
+    private Button btnGenerate;
+    private EditText[] etAll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.evan_activity_main);
 
-            etNoun = findViewById(R.id.es_first);
-            etAdjective = findViewById(R.id.es_second);
-            etAdverb = findViewById(R.id.es_third);
-            etName = findViewById(R.id.es_fourth);
-            etAlignment = findViewById(R.id.es_fifth);
-            etVerb = findViewById(R.id.es_sixth);
-            etWeapon = findViewById(R.id.es_seventh);
-            etAnimal = findViewById(R.id.es_eighth);
-            etNumber = findViewById(R.id.es_ninth);
-            etChoice = findViewById(R.id.es_tenth);
-            etAdjective2 = findViewById(R.id.es_eleventh);
-            Generate = findViewById(R.id.button);
+        etNoun = findViewById(R.id.es_first);
+        etAdjective = findViewById(R.id.es_second);
+        etAdverb = findViewById(R.id.es_third);
+        etName = findViewById(R.id.es_fourth);
+        etAlignment = findViewById(R.id.es_fifth);
+        etVerb = findViewById(R.id.es_sixth);
+        etWeapon = findViewById(R.id.es_seventh);
+        etAnimal = findViewById(R.id.es_eighth);
+        etNumber = findViewById(R.id.es_ninth);
+        etChoice = findViewById(R.id.es_tenth);
+        etAdjective2 = findViewById(R.id.es_eleventh);
+        etAll = new EditText[] {etNoun,etAdjective,etAdverb,etName,etAlignment,etVerb,etWeapon,etAnimal,etNumber,etChoice,etAdjective,etChoice,etAdjective2};
+
+        btnGenerate = findViewById(R.id.button);
+        btnGenerate.setEnabled(false);
+
+        for (EditText et:etAll) {
+            et.addTextChangedListener(new TextWatcher() {
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                }
+
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+                    if (allFilled()) {
+                        btnGenerate.setEnabled(true);
+                    }
+                }
+            });
+        }
+        btnGenerate.setEnabled(allFilled());
 
         Intent WOOLOOGENERATION = new Intent(MadLibsWOOLOO2Activity.this, MadLibsWoolooStoryPickerActivity.class);
 
-        Generate.setOnClickListener(new View.OnClickListener() {
+        btnGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -107,5 +135,19 @@ public class MadLibsWOOLOO2Activity extends AppCompatActivity {
 
 
     }
+
+    private boolean isEmpty(EditText et) {
+        return !et.getText().equals("");
+    }
+
+    private boolean allFilled() {
+        for (EditText et:etAll) {
+            if (isEmpty(et)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 
 }
