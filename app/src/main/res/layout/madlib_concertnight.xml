@@ -24,115 +24,120 @@
         app:layout_constraintGuide_begin="382dp" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        android:outlineSpotShadowColor="@color/concertnight_bg">
+        android:outlineSpotShadowColor="@color/concertnight_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:text="Madlibs: A night at a concert"
-            android:textColorHint="@color/concertnight_txt_hint"/>
+            android:hint="Madlibs: A night at a concert"
+            android:textAlignment="center"
+            android:textColorHint="@color/concertnight_txt_hint"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/directions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fill in the blanks below:" />
+            android:hint="Fill in the blanks below:" />
 
         <EditText
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Name" />
+            android:hint="Name"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/adjective"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Adjective" />
+            android:hint="Adjective"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/verb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Verb" />
+            android:hint="Verb"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/musicGenre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Music Genre" />
+            android:hint="Music Genre"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/modeOfTransport"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Mode of Transport" />
+            android:hint="Mode of Transport"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/relationshipType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Relationship Type" />
+            android:hint="Relationship Type"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/animal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Animal" />
+            android:hint="Animal"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/season"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Season" />
+            android:hint="Season"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/clothingItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Clothing Item" />
+            android:hint="Clothing Item"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/sport"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Sport" />
+            android:hint="Sport"
+            android:inputType="text" />
 
         <Button
             android:id="@+id/generateMadlib"
             android:layout_width="match_parent"
             android:layout_height="226dp"
-            android:textSize="26sp"
-            android:text="Generate Madlib"
+            android:backgroundTint="@color/concertnight_bg_btn"
+            android:hint="Generate Madlib"
             android:textColor="@color/concertnight_txt_btn"
-            android:backgroundTint="@color/concertnight_bg_btn"/>
+            android:textSize="26sp" />
     </LinearLayout>
 
 
