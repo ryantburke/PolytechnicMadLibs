@@ -61,13 +61,13 @@ public class MadLibsWOOLOO2Activity extends AppCompatActivity {
 
                 @Override
                 public void afterTextChanged(Editable s) {
-                    if (allFilled()) {
+                    if (allFilled(etAll)) {
                         btnGenerate.setEnabled(true);
                     }
                 }
             });
         }
-        btnGenerate.setEnabled(allFilled());
+        btnGenerate.setEnabled(allFilled(etAll));
 
         Intent WOOLOOGENERATION = new Intent(MadLibsWOOLOO2Activity.this, MadLibsWoolooStoryPickerActivity.class);
 
@@ -137,11 +137,11 @@ public class MadLibsWOOLOO2Activity extends AppCompatActivity {
     }
 
     private boolean isEmpty(EditText et) {
-        return !et.getText().equals("");
+        return et.getText().equals("");
     }
 
-    private boolean allFilled() {
-        for (EditText et:etAll) {
+    private boolean allFilled(EditText[] etAllEditTexts) {
+        for (EditText et:etAllEditTexts) {
             if (isEmpty(et)) {
                 return false;
             }

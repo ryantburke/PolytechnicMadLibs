@@ -4,9 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MadLibBirthdayPartyActivity extends AppCompatActivity {
 
@@ -41,10 +47,11 @@ public class MadLibBirthdayPartyActivity extends AppCompatActivity {
         etAdjective = findViewById(R.id.et_adjective);
         etName3 = findViewById(R.id.et_name3);
         etAdjective2 = findViewById(R.id.et_adjective2);
+        EditText[] etAll = {etName, etAge, etNoun, etActivity, etVerb, etVerb2, etName2, etSong, etAdjective, etName3, etAdjective2};
+
         btnNextPage = findViewById(R.id.btn_generatestory);
 
-
-
+        MadLibUtil.prepareStory(etAll, btnNextPage);
 
         Intent secondActivity = new Intent(MadLibBirthdayPartyActivity.this, MadLibBirthdayPartyDisplayActivity.class);
 
@@ -59,12 +66,12 @@ public class MadLibBirthdayPartyActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                  String story = "The Birthday Party!!!";
-                 story += "\n Yesterday I went to " + etName.getText() + "'s " + etAge.getText() + "th" + " birthday party. ";
-                 story += "\n I got him/her a " + etNoun.getText() + ".";
-                 story += "\n We started by playing " + etActivity.getText() + " and then there was a"+ etVerb.getText() + " party.";
-                 story += "\n Before cutting the cake everyone " + etVerb2.getText() + ". " + etName2.getText() + "Started to sing" + etSong.getText() + ". ";
-                 story += "\n I had a" + etAdjective.getText() + " time at the party and enjoyed celebrating" + etName3.getText();
-                 story += "\n He/She is such a " + etAdjective2.getText() + "friend.";
+                 story += "\nYesterday I went to " + etName.getText() + "'s " + etAge.getText() + "th" + " birthday party. ";
+                 story += "\nI got him/her a " + etNoun.getText() + ". ";
+                 story += "\nWe started by playing " + etActivity.getText() + " and then there was a "+ etVerb.getText() + " party. ";
+                 story += "\nBefore cutting the cake everyone " + etVerb2.getText() + ". " + etName2.getText() + " started to sing " + etSong.getText() + ". ";
+                 story += "\nI had a " + etAdjective.getText() + " time at the party and enjoyed celebrating " + etName3.getText() + ". ";
+                 story += "\nHe/She is such a " + etAdjective2.getText() + " friend.";
 
                  secondActivity.putExtra("story",story);
 
@@ -74,4 +81,5 @@ public class MadLibBirthdayPartyActivity extends AppCompatActivity {
             }
         });
     }
+
 }
