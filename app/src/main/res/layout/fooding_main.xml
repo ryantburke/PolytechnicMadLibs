@@ -7,166 +7,168 @@
     android:background="@color/fooding_bg"
     tools:context=".MadLibFoodingActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline5">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mad Libs"
-            android:textColor="@color/fooding_txt_title"
-            android:textSize="38sp" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mad Libs"
+                android:textColor="@color/fooding_txt_title"
+                android:textSize="32sp" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="231dp"
-            android:layout_height="56dp"
-            android:text="The Food-ing"
-            android:textColor="@color/fooding_txt_title"
-            android:textSize="38sp" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Food-ing"
+                android:textColor="@color/fooding_txt_title"
+                android:textSize="32sp" />
 
-        <EditText
-            android:id="@+id/edit_fn"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="First Name"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_fn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_ln"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="Last Name"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_nouns"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="Nouns"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_nouns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nouns"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_verb"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="Verb"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_verb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Verb"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_adverb"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="Adverb"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_adverb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Adverb"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_noun"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="Noun"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_noun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Noun"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_adjective"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="Adjective"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_adjective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Adjective"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_ffs"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="Favorite Food (Singular)"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_ffs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Favorite Food (Singular)"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_ffp"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="Favorite Food (Plural)"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_ffp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Favorite Food (Plural)"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_favcol"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="Favorite Color"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_favcol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Favorite Color"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_friendname"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="Friend's Name"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_friendname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Friend's Name"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_diy"
-            android:layout_width="356dp"
-            android:layout_height="49dp"
-            android:ems="10"
-            android:hint="How Many Days Are In A Year In Total"
-            android:inputType="number"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_diy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="How Many Days Are In A Year In Total"
+                android:inputType="number"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_friendsy"
-            android:layout_width="358dp"
-            android:layout_height="55dp"
-            android:ems="10"
-            android:hint="How Long Have You Been Friends (In Years)"
-            android:inputType="number"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_friendsy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="How Long Have You Been Friends (In Years)"
+                android:inputType="number"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_aom"
-            android:layout_width="358dp"
-            android:layout_height="55dp"
-            android:ems="10"
-            android:hint="Amount Of Money"
-            android:inputType="number"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_aom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Amount Of Money"
+                android:inputType="number"
+                android:textColorHint="@color/fooding_txt_hints" />
 
-        <EditText
-            android:id="@+id/edit_tof"
-            android:layout_width="359dp"
-            android:layout_height="44dp"
-            android:ems="10"
-            android:hint="True or False?"
-            android:inputType="text"
-            android:textColorHint="@color/fooding_txt_hints" />
+            <EditText
+                android:id="@+id/edit_tof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="True or False?"
+                android:inputType="text"
+                android:textColorHint="@color/fooding_txt_hints" />
 
         <Button
             android:id="@+id/btn_generate"
@@ -179,25 +181,29 @@
 
     </LinearLayout>
 
+</ScrollView>
+
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="29dp" />
+        app:layout_constraintGuide_percent="0.0729927" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="394dp" />
+        app:layout_constraintGuide_percent="0.93" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="49dp" />
+        app:layout_constraintGuide_percent="0.02" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

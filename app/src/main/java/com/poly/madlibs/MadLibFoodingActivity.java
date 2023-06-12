@@ -27,11 +27,6 @@ public class MadLibFoodingActivity extends AppCompatActivity {
     private EditText trueOrFalse;
 
 
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,8 +47,14 @@ public class MadLibFoodingActivity extends AppCompatActivity {
         friendsYear = findViewById(R.id.edit_friendsy);
         amountMoney = findViewById(R.id.edit_aom);
         trueOrFalse = findViewById(R.id.edit_tof);
+        EditText[] etAll = {firstName, lastName, nouns, verb, adverb, noun, adjective, favoriteFoodSing, favoriteFoodPlur, favoriteColor, friendsName, daysInYear, friendsYear, amountMoney, trueOrFalse};
 
         btnGenerate = findViewById(R.id.btn_generate);
+
+
+        MadLibUtil.prepareStory(etAll, btnGenerate);
+
+
 
 
         Intent intentDisplay = new Intent(MadLibFoodingActivity.this, MadLibFoodingDisplayActivity.class);
@@ -73,7 +74,7 @@ public class MadLibFoodingActivity extends AppCompatActivity {
                 story += " When the cops show up " + nouns.getText() + ", " + adverb.getText() + " get out of there.";
                 story += " The " + nouns.getText() + " theme color is " + favoriteColor.getText() + " which is also " + noun.getText() + "'s" + " favorite color.";
                 story += " I started yelling at " + noun.getText() + " for ordering " + daysInYear.getText() + " " + favoriteFoodPlur.getText() + ".";
-                story += " We started fighting any " + noun.getText() + " got knocked out by " + friendsName.getText() + " stepping in.";
+                story += " We started fighting and " + noun.getText() + " got knocked out by " + friendsName.getText() + " stepping in.";
                 story += "\n\nI was alright and luckily it was " + trueOrFalse.getText() + " that " + noun.getText() + " was gonna get the order, but we stopped them just in time." ;
                 story += " I then paid $" + amountMoney.getText() + " for the " + favoriteFoodPlur.getText() + " and left with " + friendsName.getText() + " after.";
                 story += "\n\nThe End";
