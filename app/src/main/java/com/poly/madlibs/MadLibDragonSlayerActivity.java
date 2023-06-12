@@ -33,6 +33,10 @@ public class MadLibDragonSlayerActivity extends AppCompatActivity {
         etColor = findViewById(R.id.et_color);
         btnCreate = findViewById(R.id.btn_create);
 
+        EditText[] etAll = {etWarrior, etMage, etKing,etKingdom, etColor};
+
+        MadLibUtil.prepareStory(etAll,btnCreate);
+
         //Intent used to display my story on ActivityMain2
         Intent intentDisplay = new Intent(this, MadLibDragonSlayerDisplayActivity.class);
 
@@ -55,7 +59,7 @@ public class MadLibDragonSlayerActivity extends AppCompatActivity {
                 story += "A dragon covered with obsidian scales lay atop of a mountain of gold. ";
                 story += "Sparing no time, " + etWarrior.getText() + " unsheathes their sword and rushes to face the dragon. ";
                 story += "\n\n\"For the king! For the eternal rule of king " + etKing.getText() + "!\" yells the warrior. ";
-                story += "\n\nBehind them, " + etMage.getText() + "opens their mouth, strange words spilling out. ";
+                story += "\n\nBehind them, " + etMage.getText() + " opens their mouth, strange words spilling out. ";
                 story += "The grimoire glows menacingly in response. ";
                 story += "As sword and claws clash, a heavy force pushes down on the dragon. ";
                 story += "It glares at the puny human in silver. Fire starts condensing in its mouth but stopped as the crimson human continues to pester it. ";
@@ -70,9 +74,9 @@ public class MadLibDragonSlayerActivity extends AppCompatActivity {
                 story += "At the same time, the dragon crouches into a huddle. A deep blue seeps out in between its scales. ";
                 story += "\n\nSuddenly the rumbling stops. The hall becomes eerily silent. A second later, the dragon explodes with a blinding light. ";
                 story += "The barrier was hit full force. Gold and debris scratch the barrier's surface. The moment the explosion abated, it shattered into bits of fragmented light. ";
-                story += "" + etMage.getText() + "collapsed, heaving from the heavy toll. Their eyes shut tight with pain. ";
+                story += "" + etMage.getText() + " collapsed, heaving from the heavy toll. Their eyes shut tight with pain. ";
                 story += "\n\n\"It has fallen. Let us return its core back to " + etKingdom.getText() + ".\" " + etMage.getText() + " wheezed. ";
-                story += "\"Help me up.\" \n\n" + etWarrior.getText() + "didn't say anything. ";
+                story += "\"Help me up.\" \n\n" + etWarrior.getText() + " didn't say anything. ";
                 story += "" + etMage.getText() + " opened their eyes to find a blade running through their chest. ";
                 story += "Red glistens on the shiny metal like the crimson hand wielding the handle. " + etMage.getText() + " looks at the sword's owner, an indescribable emotion etched on their face.\n\n";
                 story += "\"Why-\" " + etMage.getText() + "'s words got cut off as " + etWarrior.getText() + " pulls out their sword and skewers it into their throat. ";

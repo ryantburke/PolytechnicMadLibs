@@ -7,7 +7,7 @@
     android:background="#DDBBE7"
     android:foregroundTint="#DEBCE8"
     android:orientation="vertical"
-    tools:context=".MadLibDisplayActivity">
+    tools:context=".MadLibRegularDayDisplayActivity">
 
     <ImageView
         android:id="@+id/imageView"

@@ -30,7 +30,7 @@ public class MadLibRegularDayActivity extends AppCompatActivity {
 
         btnGenerate = findViewById(R.id.btn_generate);
 
-        Intent intentDisplay = new Intent(MadLibRegularDayActivity.this, MadLibDisplayActivity.class);
+        Intent intentDisplay = new Intent(MadLibRegularDayActivity.this, MadLibRegularDayDisplayActivity.class);
         btnGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

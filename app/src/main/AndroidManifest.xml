@@ -73,7 +73,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".MadLibDisplayActivity" />
+        <activity android:name=".MadLibRegularDayDisplayActivity" />
         <activity android:name=".MadLibRegularDayActivity" />
         <activity android:name=".MadLibSummerVacationActivity" />
         <activity android:name=".MadLibRafaelActivity" />
