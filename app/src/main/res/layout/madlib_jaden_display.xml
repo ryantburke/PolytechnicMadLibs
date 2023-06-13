@@ -16,12 +16,13 @@
 
     <TextView
         android:id="@+id/tv_story"
-        android:textColor="@color/jaden_txt_story"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="Story goes here......................................................................." />
+        android:fontFamily="cursive"
+        android:text="Story goes here......................................................................."
+        android:textColor="@color/jaden_txt_story" />
 
 
 

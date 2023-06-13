@@ -36,90 +36,99 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:text="Crazy 8's"
             android:textAlignment="center"
-            android:textColor="@color/jaden_txt_title"
-            android:text="Crazy 8's" />
+            android:textColor="#D72E2727"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/et_noun"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="Noun"
             android:inputType="text"
-            android:textColorHint="@color/jaden_txt_hint"
-            android:hint="Noun" />
+            android:textColorHint="@color/jaden_txt_hint" />
 
         <EditText
             android:id="@+id/et_plural_noun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="Plural Noun"
             android:inputType="text"
-            android:textColorHint="@color/jaden_txt_hint"
-            android:hint="Plural Noun" />
+            android:textColorHint="@color/jaden_txt_hint" />
 
         <EditText
             android:id="@+id/et_verb"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="Verb"
             android:inputType="text"
-            android:textColorHint="@color/jaden_txt_hint"
-            android:hint="Verb" />
+            android:textColorHint="@color/jaden_txt_hint" />
 
         <EditText
             android:id="@+id/et_adj"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="Adjective"
             android:inputType="text"
-            android:textColorHint="@color/jaden_txt_hint"
-            android:hint="Adjective" />
+            android:textColorHint="@color/jaden_txt_hint" />
 
         <EditText
             android:id="@+id/et_adverb"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="Adverb"
             android:inputType="text"
-            android:textColorHint="@color/jaden_txt_hint"
-            android:hint="Adverb" />
+            android:textColorHint="@color/jaden_txt_hint" />
 
         <EditText
             android:id="@+id/et_color"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="Color"
             android:inputType="text"
-            android:textColorHint="@color/jaden_txt_hint"
-            android:hint="Color" />
+            android:textColorHint="@color/jaden_txt_hint" />
 
         <EditText
             android:id="@+id/et_food"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="Food"
             android:inputType="text"
-            android:textColorHint="@color/jaden_txt_hint"
-            android:hint="Food" />
+            android:textColorHint="@color/jaden_txt_hint" />
 
         <EditText
             android:id="@+id/et_celeb"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="Celebrity"
             android:inputType="text"
-            android:textColorHint="@color/jaden_txt_hint"
-            android:hint="Celebrity" />
+            android:textColorHint="@color/jaden_txt_hint" />
 
         <Button
             android:id="@+id/btn_nextpage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/jaden_btn_bg"
-            android:textColor="@color/jaden_btn_txt"
-            android:text="Generate" />
+            android:fontFamily="cursive"
+            android:text="Generate"
+            android:textColor="@color/jaden_btn_txt" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
